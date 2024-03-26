@@ -80,6 +80,17 @@ There will be a variety of files created:
 
 That's it! Create any automation you want by creating a new actions (either `.json` or `.ts`) and passing it to the `start` command. See the [defining actions section](#defining-actions) below for more information.
 
+## Troubleshoot
+
+On Windows you need to have Microsoft Speech Platform SDK or Runtime installed:
+```
+https://www.microsoft.com/en-us/download/details.aspx?id=14373
+https://www.microsoft.com/en-us/download/details.aspx?id=27225
+```
+
+Any FFmpeg Problems? Install the latest version:
+https://ffmpeg.org/download.html
+
 ## Other Examples
 
 Looks like GitHub isn't very friendly for video embeds, you can see a few examples and a Web MVP [on our website at codevideo.ai](https://codevideo.io/ai).

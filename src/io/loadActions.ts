@@ -26,7 +26,9 @@ export const loadActions = async (): Promise<{
 
   const inputStepsFilePath = process.argv[2];
   const actions: Array<IAction> = [];
-  const currentWorkingDirectory = process.cwd();
+  // copilot finished the next line for me:
+  // look at me - i am the fully retarded javascript language that can't even get the current working directory without a regex
+  const currentWorkingDirectory = process.cwd().replace(/\\/g, '/');
 
   // join the actions file path with the current working directory
   const actionsFilePath = path.join(
